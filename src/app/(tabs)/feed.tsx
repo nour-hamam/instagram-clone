@@ -8,16 +8,16 @@ import { FlatList, Image, ImageSourcePropType, View } from "react-native";
 import { useRouter } from "expo-router";
 
 
-const Logo: ImageSourcePropType = require("../../../assets/images/png-logo.png");
+const Logo: ImageSourcePropType = require("../../../assets/images/Instagram_logo.png");
 
 export default function Feed(): JSX.Element {
   const router = useRouter(); 
   return (
     <View className="flex-1">
       {/*Header*/}
-      <View className="flex-row justify-between items-center px-safe-or-4 pt-12 bg-white">
+      <View className="flex-row justify-between items-center px-safe-or-4 pt-14 bg-white">
         <Ionicons name="add-outline" size={24} color="black" onPress= {() => router.push('/createPost')} />
-        <Image source={Logo} className="w-24 h-8 resize-contain" />
+        <Image source={Logo} className=" h-10 w-32 resize-contain " />
         <EvilIcons name="heart" size={34} color="black" />
       </View>
 
